@@ -90,7 +90,7 @@ if __name__ == "__main__":
     input_path, output_path, user_stated_device, batch_size = vars(parser.parse_args()).values()
     
     device = torch.device(user_stated_device)
-    pretrained_dir = "./checkpoints/trained_netG.pth"
+    pretrained_dir = "/content/cartoon-gan/checkpoints/trained_netG.pth"
     netG = Generator().to(device)
     netG.eval()
 
